@@ -21,6 +21,11 @@ def product_of_all_other_numbers(arr):
 
     return prods
 
+# thursday - improvements
+# not sure how I can improve this alg...
+# runtime is O(n*(n-1))?**
+# **unless .copy() counts as an O(n) operation
+
 if __name__ == '__main__':
     # Use the main function to test your implementation
     # arr = [1, 2, 3, 4, 5]

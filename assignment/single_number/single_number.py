@@ -15,6 +15,9 @@ def single_number(arr):
     # once done, the only number left in no_dupes should be our odd number out
     return no_dupes[0]
 
+# thursday - improvements
+# first pass solution already O(n)
+
 if __name__ == '__main__':
     # Use the main function to test your implementation
     arr = [1, 1, 4, 4, 5, 5, 3, 3, 9, 0, 0]
