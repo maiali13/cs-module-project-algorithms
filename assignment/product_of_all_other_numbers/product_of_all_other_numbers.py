@@ -2,11 +2,24 @@
 Input: a List of integers
 Returns: a List of integers
 '''
+# wednesday - first pass
+# [1, 7, 3, 4] -->
+# [7*3*4, 1*3*4, 1*7*4, 1*7*3] -->
+# [84, 12, 28, 21]
 def product_of_all_other_numbers(arr):
-    # Your code here
+    prods = []
+    for i, j in enumerate(arr):
+        # make copy of arr
+        temp = arr.copy()
+        # remove the index number
+        temp.pop(i)
+        prod = 1
+        for x in temp:
+            prod *= x # assignment operators make me feel like a real programmer ᕦ(^‿^)ᕤ 
+        # append partial products to the array
+        prods.append(prod)
 
-    pass
-
+    return prods
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
